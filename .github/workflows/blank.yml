@@ -5,7 +5,11 @@ on:
 #     branches: 
 #       - develop  
   push: 
+    branches: 
+      - master
   pull_request:
+    branches: 
+      - master
     
 
 
@@ -15,15 +19,15 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
     
+    - name: checkout
+      uses: actions/checkout@v1
     - name: "Check if user has write access"
       uses: "lannonbr/repo-permission-check-action@2.0.0"
       with:
         permission: "write"
       env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-    - name: checkout
-      uses: actions/checkout@v1
+
     - name: Run sonarqube on push
       env: 
         PROJECT_KEY: VA
