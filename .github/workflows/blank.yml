@@ -19,7 +19,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v1
     - name: Run sonarqube on push
-      if: github.event_name == 'push' && secrets.GITHUB_TOKEN > 0
+      if: github.event_name == 'push' 
       env: 
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
