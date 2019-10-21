@@ -11,7 +11,8 @@ jobs:
   
   test:
     runs-on: ubuntu-latest
-    
+    env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    
     steps:
     
@@ -20,7 +21,6 @@ jobs:
     - name: Run sonarqube on push
       if: github.event_name == 'push' && secrets.GITHUB_TOKEN > 0
       env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
       run: echo(secrets.SONAR_TOKEN)
