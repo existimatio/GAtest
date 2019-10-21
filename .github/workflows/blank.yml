@@ -1,0 +1,26 @@
+name: sonar-scanner
+
+on:
+#   pull_request:
+#     branches: 
+#       - develop  
+  push: 
+
+
+jobs:
+  
+  test:
+    runs-on: ubuntu-latest
+   
+    steps:
+    
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: Run sonarqube on push
+      if: github.event_name == 'push' && secrets.GITHUB_TOKEN > 0
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PROJECT_KEY: VA
+        HOST_URL: https://sonar.openbsl.ru
+      run: echo(secrets.SONAR_TOKEN)
+    
