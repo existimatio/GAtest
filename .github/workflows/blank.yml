@@ -5,6 +5,8 @@ on:
 #     branches: 
 #       - develop  
   push: 
+  pull_request:
+    
 
 
 jobs:
@@ -16,12 +18,18 @@ jobs:
    
     steps:
     
+    - name: "Check if user has write access"
+      uses: "lannonbr/repo-permission-check-action@2.0.0"
+      with:
+        permission: "write"
+      env:
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
     - name: checkout
       uses: actions/checkout@v1
     - name: Run sonarqube on push
-      if: github.event_name == 'push' 
       env: 
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
-      run: echo(secrets.SONAR_TOKEN)
+      run: echo ddd
     
