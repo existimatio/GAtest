@@ -32,5 +32,5 @@ jobs:
       env: 
         PROJECT_KEY: VA
         HOST_URL: https://sonar.openbsl.ru
-      run: echo ddd
+      run: echo ddd ${{ secrets.SONAR_TOKEN }}
     
