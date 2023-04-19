@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-19T07:51:11.639Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="8GDp5eGeFDPS_APKIpbo" version="21.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-19T08:04:25.896Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="SoxMxOdknmRVJ1oUq2bp" version="21.1.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="494" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="170" y="70" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-0" value="End" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="470" y="70" width="80" height="50" as="geometry" />
+          <mxGeometry x="505" y="70" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-13" value="SturtUp" style="swimlane;startSize=20;horizontal=1;containerType=tree;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="140" y="130" width="140" height="550" as="geometry" />
@@ -49,20 +49,75 @@
         <mxCell id="a5ogxu9tReecGd_fqsYU-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="a5ogxu9tReecGd_fqsYU-13" source="a5ogxu9tReecGd_fqsYU-20" target="a5ogxu9tReecGd_fqsYU-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a5ogxu9tReecGd_fqsYU-20" value="Загрузка отчета" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-13">
+        <mxCell id="a5ogxu9tReecGd_fqsYU-20" value="Загрузка файла отчета" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-13">
           <mxGeometry x="20" y="330" width="100" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.57;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="a5ogxu9tReecGd_fqsYU-13" source="a5ogxu9tReecGd_fqsYU-24" target="a5ogxu9tReecGd_fqsYU-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-24" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Количество периодов = 1 и период отчета прошлый месяц?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-13">
-          <mxGeometry x="30" y="400" width="80" height="35" as="geometry" />
+          <mxGeometry x="20" y="400" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-40" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Запрос к базе ОеБС о раннее загруженном отчете&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-13">
+          <mxGeometry x="20" y="480" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="a5ogxu9tReecGd_fqsYU-30" target="a5ogxu9tReecGd_fqsYU-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-30" value="Уведомление о ошибке процесса" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="314" y="522.5" width="100" height="50" as="geometry" />
+          <mxGeometry x="314" y="532.5" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="a5ogxu9tReecGd_fqsYU-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="a5ogxu9tReecGd_fqsYU-24" target="a5ogxu9tReecGd_fqsYU-30">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="a5ogxu9tReecGd_fqsYU-42" target="a5ogxu9tReecGd_fqsYU-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-42" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Отчет был загружен в ОеБС?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="155" y="720" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="a5ogxu9tReecGd_fqsYU-40" target="a5ogxu9tReecGd_fqsYU-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-45" value="Ожидание результатов" style="swimlane;startSize=20;horizontal=1;containerType=tree;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="460" y="600" width="170" height="230" as="geometry">
+            <mxRectangle x="430" y="630" width="180" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="a5ogxu9tReecGd_fqsYU-63" target="a5ogxu9tReecGd_fqsYU-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-63" value="Загрузка элементов очереди" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="52.5" y="840" width="315" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-64" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-63">
+          <mxGeometry y="30" width="315" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-65" value="1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-64">
+          <mxGeometry width="70" height="50" as="geometry">
+            <mxRectangle width="70" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-66" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Создание запросов для заголовков и добавление в очередь&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-64">
+          <mxGeometry x="70" width="245" height="50" as="geometry">
+            <mxRectangle width="245" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-67" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-63">
+          <mxGeometry y="80" width="315" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-68" value="2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-67">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-69" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Создание запросов для строк и добавление в очередь&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=16;" vertex="1" parent="a5ogxu9tReecGd_fqsYU-67">
+          <mxGeometry x="70" width="245" height="40" as="geometry">
+            <mxRectangle width="245" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5ogxu9tReecGd_fqsYU-75" value="Выполнение запросов к базе ОеБС на добавление&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="150" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
